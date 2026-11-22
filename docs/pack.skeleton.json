@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "format-skeleton",
+  "name": "格式骨架",
+  "pixelArt": true,
+  "scale": 1,
+  "canvas": { "w": 32, "h": 32 },
+  "anchor": { "x": 16, "baseline": 28 },
+  "contentBox": { "x": 4, "y": 8, "w": 24, "h": 20 },
+  "animations": {
+    "idle": {
+      "sheet": "idle.png",
+      "frameW": 24,
+      "frameH": 20,
+      "cols": 2,
+      "box": { "x": 4, "y": 8, "w": 24, "h": 20 },
+      "frames": [
+        { "i": 0, "ms": 400 },
+        { "i": 1, "ms": 400 }
+      ]
+    }
+  },
+  "states": { "idle": ["idle"] }
+}

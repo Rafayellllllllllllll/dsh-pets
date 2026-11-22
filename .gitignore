@@ -1,0 +1,43 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# 凭据与本地环境
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+credentials.json
+secrets.json
+*.token
+
+# 私有目录与个人材料
+private/
+personal/
+work/
+
+# 本地虚拟环境与缓存
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.python-version
+node_modules/
+
+# 绘图工具工程与临时文件。正式源图、PNG 和 zip 不忽略
+*.bak
+*.tmp
+*.partial
+*.psd
+*.xcf
+*.kra
+*.ase
+*.aseprite
+*.log
