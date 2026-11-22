@@ -1,0 +1,420 @@
+{
+  "schema": 1,
+  "id": "qianxia-pixel",
+  "name": "千夏像素宠物",
+  "author": "粉丝向适配（AI 辅助）",
+  "pixelArt": true,
+  "scale": 1,
+  "canvas": {
+    "w": 67,
+    "h": 58
+  },
+  "anchor": {
+    "x": 31.5,
+    "baseline": 56
+  },
+  "contentBox": {
+    "x": 8,
+    "y": 2,
+    "w": 47,
+    "h": 54
+  },
+  "animations": {
+    "idle": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 0,
+          "ms": 450
+        },
+        {
+          "i": 1,
+          "ms": 450
+        },
+        {
+          "i": 2,
+          "ms": 450
+        },
+        {
+          "i": 3,
+          "ms": 450
+        },
+        {
+          "i": 2,
+          "ms": 450
+        },
+        {
+          "i": 1,
+          "ms": 450
+        }
+      ]
+    },
+    "thinking": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 4,
+          "ms": 520
+        },
+        {
+          "i": 5,
+          "ms": 560
+        },
+        {
+          "i": 4,
+          "ms": 520
+        },
+        {
+          "i": 5,
+          "ms": 600
+        }
+      ]
+    },
+    "working": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 6,
+          "ms": 280
+        },
+        {
+          "i": 7,
+          "ms": 420
+        }
+      ]
+    },
+    "notification": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 8,
+          "ms": 500
+        },
+        {
+          "i": 9,
+          "ms": 700
+        }
+      ]
+    },
+    "attention": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 7,
+          "ms": 400
+        },
+        {
+          "i": 6,
+          "ms": 280
+        },
+        {
+          "i": 7,
+          "ms": 500
+        }
+      ]
+    },
+    "error": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 10,
+          "ms": 500
+        },
+        {
+          "i": 11,
+          "ms": 700
+        }
+      ]
+    },
+    "sleeping": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 13,
+          "ms": 900
+        },
+        {
+          "i": 14,
+          "ms": 900
+        },
+        {
+          "i": 15,
+          "ms": 1000
+        },
+        {
+          "i": 14,
+          "ms": 900
+        }
+      ]
+    },
+    "waking": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 14,
+          "ms": 280
+        },
+        {
+          "i": 13,
+          "ms": 280
+        },
+        {
+          "i": 12,
+          "ms": 500
+        }
+      ],
+      "loop": false
+    },
+    "humming": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 7,
+          "ms": 500
+        },
+        {
+          "i": 6,
+          "ms": 280
+        },
+        {
+          "i": 7,
+          "ms": 500
+        }
+      ]
+    },
+    "wave": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 8,
+          "ms": 280
+        },
+        {
+          "i": 9,
+          "ms": 420
+        }
+      ],
+      "loop": false
+    },
+    "shy": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 10,
+          "ms": 280
+        },
+        {
+          "i": 11,
+          "ms": 420
+        }
+      ],
+      "loop": false
+    },
+    "floppy": {
+      "sheet": "qianxia.png",
+      "frameW": 67,
+      "frameH": 58,
+      "cols": 4,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 67,
+        "h": 58
+      },
+      "frames": [
+        {
+          "i": 13,
+          "ms": 400
+        },
+        {
+          "i": 14,
+          "ms": 400
+        }
+      ]
+    }
+  },
+  "states": {
+    "idle": [
+      "idle",
+      "humming"
+    ],
+    "thinking": [
+      "thinking"
+    ],
+    "working": [
+      "working"
+    ],
+    "notification": [
+      "notification"
+    ],
+    "attention": [
+      "attention"
+    ],
+    "error": [
+      "error"
+    ],
+    "sleeping": [
+      "sleeping"
+    ],
+    "waking": [
+      "waking"
+    ],
+    "juggling": [
+      "working"
+    ],
+    "sweeping": [
+      "thinking"
+    ]
+  },
+  "reactions": {
+    "tapLeft": "wave",
+    "tapRight": "wave",
+    "tickle": "shy",
+    "drag": "floppy"
+  },
+  "roam": {
+    "anim": "idle",
+    "faces": "front"
+  },
+  "sleep": {
+    "afterMs": 60000
+  },
+  "idlePool": {
+    "anims": [
+      {
+        "anim": "humming",
+        "ms": 2400,
+        "weight": 1
+      }
+    ],
+    "everyMs": {
+      "mean": 120000,
+      "min": 45000,
+      "max": 300000
+    }
+  },
+  "hitBoxes": {
+    "default": {
+      "x": 8,
+      "y": 2,
+      "w": 47,
+      "h": 54
+    },
+    "sleeping": {
+      "x": 7,
+      "y": 11,
+      "w": 52,
+      "h": 45
+    },
+    "sleepingAnims": [
+      "sleeping"
+    ],
+    "byAnim": {
+      "floppy": {
+        "x": 7,
+        "y": 11,
+        "w": 52,
+        "h": 45
+      }
+    }
+  }
+}

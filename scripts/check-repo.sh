@@ -103,11 +103,20 @@ for dir in pets/*/; do
     say_fail "$name is missing README.md"
     continue
   fi
+  pack_json=""
   if [ -f "${dir}pack.json" ]; then
+    pack_json="${dir}pack.json"
+  elif [ -f "${dir}pack/pack.json" ]; then
+    pack_json="${dir}pack/pack.json"
+  fi
+  if [ -n "$pack_json" ]; then
     if grep -q '尚不可导入' "${dir}README.md"; then
-      say_fail "$name has pack.json but README still says 尚不可导入"
+      say_fail "$name has a manifest but README still says 尚不可导入"
     else
-      say_ok "$name has pack.json and README no longer says 尚不可导入"
+      say_ok "$name has a manifest and README no longer says 尚不可导入"
+    fi
+    if ! find "$dir" -name '*.zip' -type f | grep -q .; then
+      say_fail "$name has a manifest but no zip"
     fi
   else
     if grep -q '尚不可导入' "${dir}README.md"; then
@@ -116,7 +125,7 @@ for dir in pets/*/; do
       say_fail "$name has no pack.json; README must include 尚不可导入"
     fi
   fi
-  if [ ! -f "${dir}pack.json" ] && find "$dir" -name '*.zip' -type f | grep -q .; then
+  if [ -z "$pack_json" ] && find "$dir" -name '*.zip' -type f | grep -q .; then
     say_fail "$name has a zip but no pack.json"
   fi
 done
@@ -190,6 +199,17 @@ then
   :
 else
   say_fail "source image or skeleton check failed"
+fi
+
+if [ -f pets/qianxia/pack/pack.json ]; then
+  if python3 scripts/validate_pet_pack.py \
+    pets/qianxia/pack \
+    pets/qianxia/packages/qianxia-pixel-1.zip \
+    --display-name "千夏像素宠物"; then
+    say_ok "qianxia pack passed local format validation"
+  else
+    say_fail "qianxia pack failed local format validation"
+  fi
 fi
 
 if [ "$fail" -ne 0 ]; then

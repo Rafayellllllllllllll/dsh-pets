@@ -18,12 +18,14 @@ DSH Go 像素宠物的公开归档。每只宠物单独放在 `pets/<id>/`，以
 
 ```text
 pets/<id>/
-  README.md          名称、状态、来源说明
-  source/            源图。未完成的宠物可以只有这里
-  scripts/           可复现脚本。有脚本就提交，并写明命令
-  pack.json          清单。包未完成时不要放
-  *.png              静态图集
-  <id>.zip           安装包。尚未验证前不要放
+  README.md                 名称、状态、来源说明
+  source/                   源图
+  scripts/                  可复现脚本
+  requirements.txt          这只宠物的构建依赖，装进本地 venv
+  pack/pack.json            清单
+  pack/*.png                静态图集
+  preview/                  预览，不放进安装 zip
+  packages/<文件名>-<版本>.zip
 ```
 
 `id` 使用小写字母、数字和连字符，例如 `qianxia`。
@@ -32,7 +34,7 @@ pets/<id>/
 
 | 目录 | 名称 | 状态 |
 | --- | --- | --- |
-| [pets/qianxia](pets/qianxia/) | 千夏像素宠物 | 只有 4×4 源图。尚不可导入 |
+| [pets/qianxia](pets/qianxia/) | 千夏像素宠物 | 本地格式检查已通过。尚未在 App 里导入 |
 
 ## 结构检查
 

@@ -22,10 +22,11 @@
 
 ## 脚本
 
-- 可复现脚本放在对应宠物的 `scripts/`，或放在仓库 `scripts/`（只用于仓库结构检查）。
-- 脚本要写清输入、输出和命令。优先使用 POSIX shell 与 Python 3 标准库。
-- 不安装重型依赖，不建网站，不部署。
-- 临时导出放在被忽略的 `work/`。正式 PNG、`pack.json`、zip 和脚本才提交。
+- 可复现脚本放在对应宠物的 `scripts/`。仓库级检查放在 `scripts/`。
+- 结构检查和 `scripts/validate_pet_pack.py` 只用 POSIX shell 与 Python 3 标准库。宠物图如果需要第三方库，把依赖写进该宠物的 `requirements.txt`，用 `python3 -m venv .venv` 安装。
+- 不把依赖装进系统环境，不提交 `.venv`，不建网站，不部署。
+- 临时导出放在被忽略的 `work/`。正式 PNG、`pack.json`、预览、版本化 zip 和脚本才提交。
+- 本地格式检查通过之后，说明里只写本地格式检查。没有在 App 里导入过，就不要写导入成功。
 
 ## 不要提交的东西
 
